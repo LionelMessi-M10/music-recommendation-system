@@ -5,8 +5,8 @@ from model.cosin import *
 
 
 app=Flask(__name__)
-data_song=pd.read_csv(r"D:\PTIT\data science\complete_project\data\allsong_data.csv")
-feature_song=pd.read_csv(r"D:\PTIT\data science\complete_project\data\complete_feature.csv")
+data_song=pd.read_csv(r"D:\Support\music-recommendation-system\data\allsong_data.csv")
+feature_song=pd.read_csv(r"D:\Support\music-recommendation-system\data\complete_feature.csv")
 @app.route("/")
 @app.route("/home",methods=['GET','POST'])
 def home():
